@@ -1,0 +1,4 @@
+com/example/auth/service/AuthServiceTest.class
+com/example/auth/config/TestSecurityConfig.class
+com/example/auth/service/CustomUserDetailsServiceTest.class
+com/example/auth/controller/AuthControllerIntegrationTest.class

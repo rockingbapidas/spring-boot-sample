@@ -1,0 +1,1050 @@
+[INFO] Scanning for projects...
+[WARNING] Failed to build parent project for com.example:service-registry:jar:1.0-SNAPSHOT
+[INFO] 
+[INFO] --------------------< com.example:service-registry >--------------------
+[INFO] Building service-registry 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.3:run (default-cli) > test-compile @ service-registry >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ service-registry ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ service-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ service-registry ---
+[INFO] skip non existing resourceDirectory /Users/bapidas/IdeaProjects/SpringProject/service-registry/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ service-registry ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.3:run (default-cli) < test-compile @ service-registry <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.3:run (default-cli) @ service-registry ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2025-05-10T22:55:17.420+05:30  INFO 34046 --- [service-registry] [           main] c.e.s.ServiceRegistryApplication         : Starting ServiceRegistryApplication using Java 17.0.14 with PID 34046 (/Users/bapidas/IdeaProjects/SpringProject/service-registry/target/classes started by bapidas in /Users/bapidas/IdeaProjects/SpringProject/service-registry)
+2025-05-10T22:55:17.422+05:30  INFO 34046 --- [service-registry] [           main] c.e.s.ServiceRegistryApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T22:55:18.348+05:30  INFO 34046 --- [service-registry] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=504077d7-073c-3d18-8515-55964ad48372
+2025-05-10T22:55:18.391+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-10T22:55:18.394+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.396+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.403+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.404+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.405+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$455/0x000000012333b9e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.406+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.413+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.420+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.421+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.422+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.423+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.425+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.431+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.432+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.433+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.434+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.434+05:30  WARN 34046 --- [service-registry] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-10T22:55:18.631+05:30  INFO 34046 --- [service-registry] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-05-10T22:55:18.642+05:30  INFO 34046 --- [service-registry] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T22:55:18.642+05:30  INFO 34046 --- [service-registry] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-10T22:55:18.704+05:30  INFO 34046 --- [service-registry] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T22:55:18.705+05:30  INFO 34046 --- [service-registry] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1242 ms
+2025-05-10T22:55:19.506+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-10T22:55:19.507+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-10T22:55:19.715+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-10T22:55:19.715+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-10T22:55:20.400+05:30  WARN 34046 --- [service-registry] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-10T22:55:20.417+05:30  INFO 34046 --- [service-registry] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-10T22:55:20.441+05:30  INFO 34046 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-10T22:55:20.442+05:30  INFO 34046 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-10T22:55:20.454+05:30  INFO 34046 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746897920453 with initial instances count: 0
+2025-05-10T22:55:20.487+05:30  INFO 34046 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-10T22:55:20.488+05:30  INFO 34046 --- [service-registry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-10T22:55:20.619+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-10T22:55:20.619+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-10T22:55:20.619+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-10T22:55:20.619+05:30  INFO 34046 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-10T22:55:20.695+05:30  INFO 34046 --- [service-registry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-05-10T22:55:20.700+05:30  INFO 34046 --- [service-registry] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-10T22:55:20.702+05:30  INFO 34046 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-10T22:55:20.710+05:30  INFO 34046 --- [service-registry] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-05-10T22:55:20.750+05:30  INFO 34046 --- [service-registry] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+2025-05-10T22:55:20.760+05:30  INFO 34046 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-10T22:55:20.761+05:30  INFO 34046 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-10T22:55:20.761+05:30  INFO 34046 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-10T22:55:20.761+05:30  INFO 34046 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-10T22:55:20.761+05:30  INFO 34046 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-10T22:55:20.766+05:30  INFO 34046 --- [service-registry] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-05-10T22:55:20.766+05:30  WARN 34046 --- [service-registry] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-10T22:55:20.766+05:30  INFO 34046 --- [service-registry] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-10T22:55:20.767+05:30  INFO 34046 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-10T22:55:20.772+05:30 ERROR 34046 --- [service-registry] [t-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.5.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.5.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.5.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey2025-05-10T22:55:44.924+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-10T22:55:45.589+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-10T22:55:53.223+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=false)
+2025-05-10T22:55:53.730+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=true)
+2025-05-10T22:56:09.910+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T22:57:09.915+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-10T22:58:09.920+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-10T22:58:40.378+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-10T22:58:40.387+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=false)
+2025-05-10T22:58:40.886+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-10T22:58:40.886+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=true)
+2025-05-10T22:58:43.464+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-10T22:58:43.976+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-10T22:58:43.976+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-10T22:58:43.979+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-10T22:58:43.979+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-10T22:58:45.442+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 (replication=false)
+2025-05-10T22:58:45.948+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAY-SERVICE/192.168.1.15:gateway-service:8081
+2025-05-10T22:58:45.948+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAY-SERVICE - 192.168.1.15:gateway-service:8081
+2025-05-10T22:58:45.950+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost failed with response code 404
+2025-05-10T22:58:45.950+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost: missing entry.
+2025-05-10T22:58:50.164+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-10T22:58:50.670+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-10T22:58:56.214+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=false)
+2025-05-10T22:58:56.727+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=true)
+2025-05-10T22:59:09.926+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-10T23:00:09.932+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-10T23:01:09.936+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-10T23:02:02.720+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-10T23:02:02.732+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=false)
+2025-05-10T23:02:03.227+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-10T23:02:03.227+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=true)
+2025-05-10T23:02:05.803+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-10T23:02:06.308+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-10T23:02:06.308+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-10T23:02:06.310+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-10T23:02:06.310+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-10T23:02:07.832+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 (replication=false)
+2025-05-10T23:02:08.337+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAY-SERVICE/192.168.1.15:gateway-service:8081
+2025-05-10T23:02:08.337+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAY-SERVICE - 192.168.1.15:gateway-service:8081
+2025-05-10T23:02:08.338+05:30  WARN 33971 --- [service-registry] [et_localhost-19] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost failed with response code 404
+2025-05-10T23:02:08.338+05:30  WARN 33971 --- [service-registry] [et_localhost-19] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost: missing entry.
+2025-05-10T23:02:09.941+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-10T23:02:12.121+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-10T23:02:12.630+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-10T23:02:18.400+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=false)
+2025-05-10T23:02:18.906+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=true)
+2025-05-10T23:03:09.943+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-10T23:04:09.946+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T23:05:09.950+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T23:06:09.954+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-10T23:07:09.959+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-10T23:08:09.965+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T23:09:09.882+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2025-05-10T23:09:09.970+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T23:10:08.013+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-10T23:10:08.020+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=false)
+2025-05-10T23:10:08.524+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-10T23:10:08.524+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=true)
+2025-05-10T23:10:09.973+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-10T23:10:13.085+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 (replication=false)
+2025-05-10T23:10:13.592+05:30  WARN 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAY-SERVICE/192.168.1.15:gateway-service:8080
+2025-05-10T23:10:13.592+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAY-SERVICE - 192.168.1.15:gateway-service:8080
+2025-05-10T23:10:13.593+05:30  WARN 33971 --- [service-registry] [get_localhost-7] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAY-SERVICE/192.168.1.15:gateway-service:8080:Cancel@localhost failed with response code 404
+2025-05-10T23:10:13.593+05:30  WARN 33971 --- [service-registry] [get_localhost-7] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAY-SERVICE/192.168.1.15:gateway-service:8080:Cancel@localhost: missing entry.
+2025-05-10T23:10:17.776+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-10T23:10:17.780+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-10T23:10:17.784+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-10T23:10:18.288+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-10T23:10:18.289+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=true)
+2025-05-10T23:10:22.046+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-10T23:10:22.046+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-10T23:11:09.978+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-10T23:11:23.929+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-10T23:11:24.445+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-10T23:12:09.983+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T03:12:54.525+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15025ms
+2025-05-11T03:12:55.034+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2025-05-11T03:12:55.070+05:30  WARN 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T03:12:55.081+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T03:12:55.536+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T03:12:55.536+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T03:12:55.666+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T03:12:56.183+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T04:31:10.875+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T05:26:21.435+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T08:01:41.204+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T09:02:41.199+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2986ms
+2025-05-11T10:04:06.604+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T10:04:06.608+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2025-05-11T10:04:06.611+05:30  WARN 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T10:04:06.615+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T10:04:07.181+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T10:04:07.182+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T10:04:07.276+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T10:04:07.803+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T11:13:53.665+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T12:43:58.304+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T12:43:58.312+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2025-05-11T12:43:58.313+05:30  WARN 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T12:43:58.316+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T12:43:59.278+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T12:43:59.279+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T12:43:59.324+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T12:43:59.854+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T13:07:20.008+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T13:39:23.990+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T13:40:23.988+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T13:41:05.843+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T13:41:23.992+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T13:42:23.995+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T13:43:24.000+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T13:44:24.001+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T13:45:24.003+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T13:46:24.008+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T13:47:24.009+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T13:48:24.020+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T13:49:24.029+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T13:50:24.035+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T13:51:24.042+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T13:52:24.048+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T13:53:24.057+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T13:54:24.065+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T13:55:24.069+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T13:56:05.851+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T13:56:24.070+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T13:57:24.074+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T13:58:24.077+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T13:59:24.098+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:00:24.110+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:01:24.149+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 36ms
+2025-05-11T14:02:24.148+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T14:03:24.149+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:04:24.150+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:05:24.151+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:06:24.153+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:07:24.154+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:08:24.164+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:09:24.169+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T14:10:24.171+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T14:11:05.883+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T14:11:24.174+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:12:24.182+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T14:13:24.183+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:14:24.187+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 56ms
+2025-05-11T14:15:24.190+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:16:24.194+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:17:24.196+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:18:24.204+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T14:19:24.211+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T14:20:24.214+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:21:24.222+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T14:22:24.226+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:23:24.235+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:24:24.236+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:25:24.238+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:26:05.887+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T14:26:24.243+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:27:24.247+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T14:28:24.250+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:29:24.251+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T14:30:24.254+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:31:24.256+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:32:24.279+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:33:24.286+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:34:24.295+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:35:24.298+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:36:24.298+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:37:24.299+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:38:24.300+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T14:39:24.310+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:40:24.315+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T14:41:05.909+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T14:41:24.318+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:42:24.326+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T14:43:24.336+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:44:24.343+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T14:45:24.353+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T14:46:24.361+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T14:47:24.364+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:48:24.384+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T14:49:24.389+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:50:24.390+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:51:24.399+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T14:52:24.404+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T14:53:24.407+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T14:54:24.412+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:55:24.417+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T14:56:05.933+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T14:56:24.422+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T14:57:24.423+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T14:58:24.426+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:58:55.326+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T14:58:55.835+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T14:59:06.432+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T14:59:06.937+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T14:59:09.391+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T14:59:09.899+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T14:59:09.899+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T14:59:09.900+05:30  WARN 33971 --- [service-registry] [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-11T14:59:09.900+05:30  WARN 33971 --- [service-registry] [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-11T14:59:24.430+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T14:59:36.407+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T14:59:36.407+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T14:59:36.414+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T14:59:36.922+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T15:00:24.433+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T15:01:24.433+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T15:02:24.436+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T15:03:24.453+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T15:04:24.459+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:05:24.463+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T15:06:24.467+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T15:07:24.469+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T15:08:24.481+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T15:09:24.491+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:10:24.501+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:11:05.955+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T15:11:24.509+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:12:24.511+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T15:13:24.520+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:14:24.525+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:15:24.534+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:16:24.541+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:17:24.547+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:18:24.555+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:19:24.559+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T15:20:24.569+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:21:24.579+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:22:24.584+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:23:24.590+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:24:24.599+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:25:24.608+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:26:05.966+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T15:26:24.615+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:27:24.623+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:28:24.629+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:29:24.632+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T15:30:24.637+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:31:24.649+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2025-05-11T15:32:24.654+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:33:24.664+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:34:24.677+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-11T15:35:24.687+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T15:36:24.691+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T15:37:24.706+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-05-11T15:38:24.717+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T15:39:24.718+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T15:40:24.722+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T15:41:05.983+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T15:41:24.724+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T15:42:24.728+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:43:24.737+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:44:24.743+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:45:24.749+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T15:46:24.750+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T15:47:24.751+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T15:48:24.753+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T15:49:24.765+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:50:24.769+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:51:24.779+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T15:52:24.787+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T15:53:24.792+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T15:54:24.797+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T15:55:24.800+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T15:56:06.002+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T15:56:24.809+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:57:24.818+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T15:58:24.821+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T15:59:24.828+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T16:00:24.834+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T16:01:24.839+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:02:24.843+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:03:24.845+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:04:24.850+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:05:24.857+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T16:06:24.892+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:07:24.895+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:08:24.897+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:09:24.907+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T16:10:24.915+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T16:11:06.055+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T16:11:24.918+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:12:24.921+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:13:24.928+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T16:14:24.929+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:15:24.936+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T16:16:24.940+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:17:24.942+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:18:24.946+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:19:24.954+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T16:20:24.960+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:21:24.982+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:22:24.990+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:23:24.999+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T16:24:25.006+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T16:25:25.008+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:26:06.101+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T16:26:25.009+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:27:25.013+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:28:25.015+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:29:25.016+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:30:25.017+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:31:25.021+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:32:25.024+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:33:25.026+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:34:25.027+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:35:25.033+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:36:25.037+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 23ms
+2025-05-11T16:37:25.040+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 19ms
+2025-05-11T16:38:25.041+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:39:25.042+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:40:25.047+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T16:41:06.107+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T16:41:25.048+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T16:42:25.050+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:43:25.060+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T16:44:25.071+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T16:45:25.076+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:46:25.086+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T16:47:25.095+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T16:48:25.098+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:49:25.105+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T16:50:25.113+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T16:51:25.124+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T16:52:25.124+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-11T16:53:25.132+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T16:54:25.136+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T16:55:25.138+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T16:56:06.110+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T16:56:25.145+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T16:57:25.151+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T16:58:25.162+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T16:59:25.169+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:00:25.180+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T17:01:25.189+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:02:25.193+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T17:03:25.199+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:04:25.203+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T17:05:25.211+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:06:25.212+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:07:25.228+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:08:25.236+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:09:25.245+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:10:25.248+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T17:11:06.135+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T17:11:25.249+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:12:25.251+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:13:25.255+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:14:25.266+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T17:15:25.271+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:16:25.281+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T17:17:25.283+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T17:18:25.290+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:19:25.295+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:20:25.305+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T17:21:25.309+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T17:22:25.317+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:23:25.326+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:24:25.335+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T17:25:25.343+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:26:06.155+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T17:26:25.346+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T17:27:25.351+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:28:25.359+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:29:25.376+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:30:25.388+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T17:31:25.395+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:32:25.397+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:33:25.399+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T17:34:25.407+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:35:25.410+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T17:36:25.421+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T17:37:25.424+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T17:38:25.435+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T17:39:25.437+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:40:25.444+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:41:06.192+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T17:41:25.450+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:42:25.460+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T17:43:25.465+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:44:25.474+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:45:25.482+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:46:25.484+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:47:25.487+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T17:48:25.498+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T17:49:25.507+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T17:50:25.509+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:51:25.515+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T17:52:25.525+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T17:53:25.527+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:54:25.529+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:55:25.536+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:56:06.218+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T17:56:25.546+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T17:57:25.548+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T17:58:25.554+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T17:59:25.563+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:00:25.569+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T18:01:25.569+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:02:25.574+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:03:25.585+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T18:04:25.587+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:05:25.593+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:06:25.600+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T18:07:25.602+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:08:25.612+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:09:25.615+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T18:10:25.626+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T18:11:06.237+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T18:11:25.627+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T18:12:25.628+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:13:25.629+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:14:25.633+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T18:15:25.638+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:16:25.642+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T18:17:25.651+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:18:25.660+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:19:25.668+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T18:20:25.671+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T18:21:25.678+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T18:22:25.688+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:23:25.693+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:24:25.701+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:25:25.709+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T18:26:06.260+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T18:26:25.719+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:27:25.724+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:28:25.728+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T18:29:25.736+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:30:25.746+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:31:25.756+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T18:32:25.758+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:33:25.776+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:34:25.783+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:35:25.793+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:36:25.802+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T18:37:25.812+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:38:25.823+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T18:39:25.825+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:40:25.827+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:41:06.301+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T18:41:25.834+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T18:42:25.846+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T18:43:25.851+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:44:25.858+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:45:25.863+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T18:46:25.871+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T18:47:25.882+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:48:25.890+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T18:49:25.898+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:50:25.900+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:51:25.904+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T18:52:25.915+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T18:53:25.921+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:54:25.929+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T18:55:25.940+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T18:56:06.331+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T18:56:25.949+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T18:57:25.955+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T18:58:25.958+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T18:59:25.961+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T19:00:25.963+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:01:25.968+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:02:25.974+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:03:25.984+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T19:04:25.986+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:05:25.998+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T19:06:26.002+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T19:07:26.010+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T19:08:26.014+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T19:09:26.025+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T19:10:26.027+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:11:06.355+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T19:11:26.035+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T19:12:26.046+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T19:13:26.054+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T19:14:26.065+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T19:15:26.073+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:16:26.080+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:17:26.088+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T19:18:26.097+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T19:19:26.099+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:20:26.104+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T19:21:26.113+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T19:22:26.116+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T19:22:39.686+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T19:22:40.199+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T19:22:50.686+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T19:22:50.689+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T19:22:50.692+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T19:22:51.202+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T19:22:51.202+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=true)
+2025-05-11T19:22:53.723+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T19:22:53.723+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T19:23:19.735+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T19:23:20.245+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T19:23:25.454+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T19:23:25.962+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T19:23:26.120+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T19:23:39.486+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T19:23:39.996+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T19:23:39.996+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T19:23:39.996+05:30  WARN 33971 --- [service-registry] [et_localhost-17] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-11T19:23:39.997+05:30  WARN 33971 --- [service-registry] [et_localhost-17] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-11T19:24:26.123+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:24:38.228+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=false)
+2025-05-11T19:24:38.742+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=true)
+2025-05-11T19:24:45.665+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=false)
+2025-05-11T19:24:46.174+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=true)
+2025-05-11T19:24:47.824+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=false)
+2025-05-11T19:24:47.829+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 (replication=false)
+2025-05-11T19:24:48.334+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=true)
+2025-05-11T19:24:48.334+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 (replication=true)
+2025-05-11T19:25:26.127+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T19:26:06.384+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T19:26:26.132+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:27:26.137+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:28:26.139+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:29:26.144+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:30:26.150+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:31:26.153+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:32:26.158+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:33:26.168+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T19:34:26.178+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T19:35:26.184+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 23ms
+2025-05-11T19:36:26.184+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T19:37:26.192+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T19:38:26.198+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:39:26.205+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T19:40:26.212+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:41:06.386+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T19:41:26.218+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:42:26.224+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:43:26.233+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T19:44:26.240+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:45:26.247+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:46:26.249+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:47:26.256+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T19:48:26.258+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T19:49:26.270+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T19:50:26.276+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:51:26.283+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T19:52:26.284+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T19:53:26.290+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:54:26.295+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T19:55:26.307+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T19:56:06.409+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T19:56:26.310+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T19:57:26.314+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T19:58:26.323+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T19:59:26.330+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:00:26.337+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:01:26.346+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:02:26.357+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T20:03:26.368+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:04:26.378+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:05:26.389+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:06:26.393+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 22ms
+2025-05-11T20:07:26.397+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:08:26.399+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T20:09:26.408+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:10:26.412+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:11:06.411+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T20:11:26.418+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:12:26.426+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:13:26.433+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:14:26.444+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:15:26.448+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T20:16:26.459+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:17:26.463+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:18:26.471+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:19:26.475+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:20:26.486+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:21:26.487+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T20:22:26.492+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:23:26.501+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:24:26.511+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:25:26.516+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:26:06.433+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T20:26:26.525+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:27:26.527+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T20:28:26.532+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:29:26.537+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:30:26.547+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:31:26.548+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T20:32:26.558+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:33:26.560+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T20:34:26.564+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T20:35:26.574+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:36:26.592+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:37:26.605+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T20:38:26.611+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:39:26.622+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:40:26.632+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:41:06.474+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T20:41:26.638+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:42:26.643+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T20:43:26.653+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T20:44:26.660+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:45:26.669+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:46:26.676+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T20:47:26.684+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:48:26.692+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:49:26.695+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T20:50:26.704+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:51:26.707+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:52:26.716+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T20:53:26.723+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:54:26.731+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T20:55:26.741+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T20:56:06.498+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T20:56:26.743+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T20:57:26.750+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T20:58:26.753+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T20:59:26.764+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T21:00:26.776+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T21:01:26.784+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T21:02:26.787+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:03:26.795+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T21:04:26.805+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T21:05:26.808+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:06:26.819+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 39ms
+2025-05-11T21:07:26.820+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 17ms
+2025-05-11T21:08:26.821+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:09:26.829+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T21:10:26.837+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T21:11:06.508+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T21:11:26.844+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-11T21:12:26.853+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T21:13:26.856+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:14:26.860+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:15:26.863+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:16:26.868+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:17:26.872+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:17:42.415+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=false)
+2025-05-11T21:17:42.922+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=true)
+2025-05-11T21:17:47.489+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.1.15:api-gateway:8080 (replication=false)
+2025-05-11T21:17:47.995+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.1.15:api-gateway:8080
+2025-05-11T21:17:47.995+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 192.168.1.15:api-gateway:8080
+2025-05-11T21:17:47.995+05:30  WARN 33971 --- [service-registry] [et_localhost-10] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost failed with response code 404
+2025-05-11T21:17:47.995+05:30  WARN 33971 --- [service-registry] [et_localhost-10] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost: missing entry.
+2025-05-11T21:17:49.892+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=false)
+2025-05-11T21:17:50.397+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=true)
+2025-05-11T21:17:56.380+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=false)
+2025-05-11T21:17:56.887+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status UP (replication=true)
+2025-05-11T21:17:58.562+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=false)
+2025-05-11T21:17:58.567+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 (replication=false)
+2025-05-11T21:17:59.072+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 with status DOWN (replication=true)
+2025-05-11T21:17:59.072+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8080 (replication=true)
+2025-05-11T21:18:26.874+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:18:52.024+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=false)
+2025-05-11T21:18:52.536+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=true)
+2025-05-11T21:18:57.104+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.1.15:api-gateway:8080 (replication=false)
+2025-05-11T21:18:57.610+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.1.15:api-gateway:8080
+2025-05-11T21:18:57.610+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 192.168.1.15:api-gateway:8080
+2025-05-11T21:18:57.611+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost failed with response code 404
+2025-05-11T21:18:57.611+05:30  WARN 33971 --- [service-registry] [get_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost: missing entry.
+2025-05-11T21:19:26.879+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:20:03.349+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=false)
+2025-05-11T21:20:03.857+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=true)
+2025-05-11T21:20:10.173+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=false)
+2025-05-11T21:20:10.678+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=true)
+2025-05-11T21:20:20.909+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T21:20:21.415+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T21:20:26.884+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:21:11.634+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T21:21:11.676+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=false)
+2025-05-11T21:21:11.701+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=false)
+2025-05-11T21:21:12.139+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T21:21:12.139+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=true)
+2025-05-11T21:21:12.140+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=true)
+2025-05-11T21:21:16.763+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 (replication=false)
+2025-05-11T21:21:16.795+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.1.15:api-gateway:8080 (replication=false)
+2025-05-11T21:21:17.273+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAY-SERVICE/192.168.1.15:gateway-service:8081
+2025-05-11T21:21:17.273+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAY-SERVICE - 192.168.1.15:gateway-service:8081
+2025-05-11T21:21:17.273+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.1.15:api-gateway:8080
+2025-05-11T21:21:17.273+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 192.168.1.15:api-gateway:8080
+2025-05-11T21:21:17.274+05:30  WARN 33971 --- [service-registry] [et_localhost-11] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost failed with response code 404
+2025-05-11T21:21:17.274+05:30  WARN 33971 --- [service-registry] [et_localhost-11] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost: missing entry.
+2025-05-11T21:21:17.274+05:30  WARN 33971 --- [service-registry] [et_localhost-11] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost failed with response code 404
+2025-05-11T21:21:17.274+05:30  WARN 33971 --- [service-registry] [et_localhost-11] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost: missing entry.
+2025-05-11T21:21:25.680+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T21:21:26.192+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T21:21:26.192+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T21:21:26.193+05:30  WARN 33971 --- [service-registry] [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-11T21:21:26.193+05:30  WARN 33971 --- [service-registry] [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-11T21:21:26.893+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:22:26.901+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T21:23:26.906+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:24:26.911+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:25:26.913+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:26:06.536+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 1
+2025-05-11T21:26:26.920+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T21:27:26.922+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:28:26.923+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:29:26.929+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:30:26.935+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:31:26.944+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-11T21:32:26.949+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:33:26.951+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:34:17.325+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=false)
+2025-05-11T21:34:17.835+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status UP (replication=true)
+2025-05-11T21:34:26.035+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=false)
+2025-05-11T21:34:26.539+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status UP (replication=true)
+2025-05-11T21:34:26.956+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:34:42.025+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=false)
+2025-05-11T21:34:42.528+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status UP (replication=true)
+2025-05-11T21:35:26.958+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:35:28.083+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=false)
+2025-05-11T21:35:28.149+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=false)
+2025-05-11T21:35:28.324+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=false)
+2025-05-11T21:35:28.591+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T21:35:28.591+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 with status DOWN (replication=true)
+2025-05-11T21:35:28.591+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.1.15:api-gateway:8080 with status DOWN (replication=true)
+2025-05-11T21:35:33.263+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-SERVICE/192.168.1.15:gateway-service:8081 (replication=false)
+2025-05-11T21:35:33.405+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.1.15:api-gateway:8080 (replication=false)
+2025-05-11T21:35:33.770+05:30  WARN 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAY-SERVICE/192.168.1.15:gateway-service:8081
+2025-05-11T21:35:33.770+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAY-SERVICE - 192.168.1.15:gateway-service:8081
+2025-05-11T21:35:33.770+05:30  WARN 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.1.15:api-gateway:8080
+2025-05-11T21:35:33.770+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 192.168.1.15:api-gateway:8080
+2025-05-11T21:35:33.771+05:30  WARN 33971 --- [service-registry] [get_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost failed with response code 404
+2025-05-11T21:35:33.771+05:30  WARN 33971 --- [service-registry] [get_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAY-SERVICE/192.168.1.15:gateway-service:8081:Cancel@localhost: missing entry.
+2025-05-11T21:35:33.771+05:30  WARN 33971 --- [service-registry] [get_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost failed with response code 404
+2025-05-11T21:35:33.771+05:30  WARN 33971 --- [service-registry] [get_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/192.168.1.15:api-gateway:8080:Cancel@localhost: missing entry.
+2025-05-11T21:35:42.157+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/192.168.1.15:auth-service:8083 (replication=false)
+2025-05-11T21:35:42.512+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T21:35:42.512+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T21:35:42.513+05:30  WARN 33971 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: AUTH-SERVICE/192.168.1.15:auth-service:8083
+2025-05-11T21:35:42.513+05:30  INFO 33971 --- [service-registry] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): AUTH-SERVICE - 192.168.1.15:auth-service:8083
+2025-05-11T21:35:42.514+05:30  WARN 33971 --- [service-registry] [et_localhost-12] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Heartbeat@localhost failed with response code 404
+2025-05-11T21:35:42.515+05:30  WARN 33971 --- [service-registry] [et_localhost-12] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Heartbeat@localhost: missing entry.
+2025-05-11T21:35:42.515+05:30  WARN 33971 --- [service-registry] [et_localhost-12] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Heartbeat@localhost: cannot find instance id 192.168.1.15:auth-service:8083 and hence replicating the instance with status DOWN
+2025-05-11T21:35:42.515+05:30  WARN 33971 --- [service-registry] [et_localhost-12] c.n.eureka.cluster.ReplicationTask       : The replication of task AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost failed with response code 404
+2025-05-11T21:35:42.515+05:30  WARN 33971 --- [service-registry] [et_localhost-12] c.netflix.eureka.cluster.PeerEurekaNode  : AUTH-SERVICE/192.168.1.15:auth-service:8083:Cancel@localhost: missing entry.
+2025-05-11T21:35:43.024+05:30  INFO 33971 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/192.168.1.15:auth-service:8083 with status DOWN (replication=true)
+2025-05-11T21:36:26.961+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:37:26.965+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:38:26.971+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:39:26.976+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:40:26.980+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:41:06.556+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T21:41:26.983+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:42:26.988+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:43:26.991+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:44:26.994+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T21:45:27.000+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T21:46:27.002+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:47:27.004+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:48:27.009+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:49:27.012+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:50:27.018+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:51:27.019+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:52:27.021+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:53:27.022+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T21:54:27.027+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:55:27.031+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:56:06.575+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T21:56:27.032+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T21:57:27.033+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T21:58:27.037+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T21:59:27.042+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:00:27.048+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:01:27.053+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:02:27.058+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:03:27.065+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:04:27.067+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:05:27.074+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:06:27.080+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:07:27.082+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:08:27.107+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 23ms
+2025-05-11T22:09:27.112+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:10:27.115+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:11:06.588+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T22:11:27.116+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:12:27.120+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 28ms
+2025-05-11T22:13:27.131+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-11T22:14:27.143+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-11T22:15:27.148+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:16:27.155+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:17:27.159+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:18:27.163+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:19:27.164+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:20:27.173+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T22:21:27.175+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:22:27.176+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:23:27.180+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:24:27.181+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:25:27.186+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:26:06.593+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T22:26:27.190+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:27:27.191+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:28:27.197+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:29:27.206+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:30:27.211+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:31:27.214+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:32:27.218+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:33:27.222+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:34:27.224+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:35:27.228+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:36:27.231+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:37:27.234+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:38:27.235+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:39:27.241+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:40:27.246+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:41:06.616+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T22:41:27.247+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:42:27.249+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:43:27.255+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:44:27.256+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:45:27.257+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:46:27.262+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:47:27.264+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:48:27.268+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:49:27.270+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:50:27.276+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T22:51:27.281+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:52:27.284+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T22:53:27.286+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T22:54:27.290+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T22:55:27.294+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:56:06.636+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T22:56:27.299+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T22:57:27.303+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:58:27.306+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T22:59:27.311+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:00:27.319+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:01:27.323+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T23:02:27.325+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:03:27.333+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-11T23:04:27.340+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T23:05:27.348+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T23:06:27.352+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:07:27.363+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-11T23:08:27.365+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:09:27.368+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:10:27.372+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:11:06.662+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T23:11:27.377+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:12:27.380+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:13:27.381+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:14:27.385+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T23:15:27.388+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:16:27.390+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:17:27.392+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T23:18:27.397+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:19:27.400+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T23:20:27.403+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:21:27.408+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:22:27.413+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:23:27.418+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:24:27.420+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:25:27.420+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:26:06.703+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T23:26:27.422+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:27:27.428+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T23:28:27.429+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:29:27.431+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:30:27.436+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:31:27.438+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:32:27.440+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:33:27.441+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:34:27.447+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-11T23:35:27.464+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:36:27.467+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-11T23:37:27.472+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:38:27.478+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:39:27.484+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:40:27.488+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:41:06.730+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T23:41:27.492+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:42:27.495+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:43:27.501+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:44:27.509+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:45:27.514+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:46:27.519+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:47:27.525+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:48:27.530+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:49:27.534+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:50:27.536+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 20ms
+2025-05-11T23:51:27.539+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:52:27.541+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:53:27.542+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:54:27.547+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-11T23:55:27.552+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-11T23:56:06.731+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-11T23:56:27.558+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:57:27.560+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-11T23:58:27.566+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-11T23:59:27.571+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:00:27.575+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:01:27.577+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:02:27.581+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:03:27.582+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:04:27.586+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:05:27.593+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:06:27.605+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:07:27.608+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:08:27.613+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:09:27.621+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-12T00:10:27.626+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:11:06.760+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-12T00:11:27.629+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:12:27.633+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:13:27.635+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:14:27.824+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 186ms
+2025-05-12T00:15:27.826+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:16:27.833+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-12T00:17:27.839+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:18:27.838+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:19:27.840+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:20:27.843+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:21:27.849+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:22:27.853+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:23:27.854+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:24:27.856+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:25:27.862+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:26:06.858+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-12T00:26:27.862+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:27:27.863+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:28:27.868+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:29:27.867+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:30:27.872+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:31:27.874+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:32:27.875+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:33:27.876+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:34:27.880+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:35:27.884+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:36:27.886+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-12T00:37:27.890+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:38:27.895+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:39:27.897+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:40:27.903+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-12T00:41:06.837+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-12T00:41:27.904+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:42:28.015+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 62ms
+2025-05-12T00:43:27.952+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:44:27.954+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:45:27.970+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2025-05-12T00:46:27.972+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:47:27.978+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:48:27.981+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:49:27.983+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:50:27.986+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-12T00:51:27.988+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 22ms
+2025-05-12T00:52:27.992+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:53:27.998+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-12T00:54:28.002+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:55:28.006+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-12T00:56:06.807+05:30  INFO 33971 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2025-05-12T00:56:28.008+05:30  INFO 33971 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-12T00:56:56.463+05:30  INFO 33971 --- [service-registry] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
